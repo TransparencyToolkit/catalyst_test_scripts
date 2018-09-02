@@ -1,0 +1,30 @@
+{
+    "Social Media": [
+	"Facebook",
+	"Twitter",
+	"Instagram"
+    ],
+    "Elections": [
+	"Voters",
+	"Candidates",
+	"Party",
+	"Parties",
+	"Vote"
+    ],
+    "Survey Methods": [
+	"Survey",
+	"Surveys",
+	"Door-To-Door",
+	"Door To Door",
+	"Telemarketing",
+	"tracking"
+    ],
+    "Targeting Methods": [
+	"advertisements",
+	"adverising",
+	"search engines",
+	"microtargeting",
+	"ads",
+	"adware"
+    ]
+}
