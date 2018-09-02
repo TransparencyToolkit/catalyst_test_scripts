@@ -1,0 +1,61 @@
+{
+    "data_source_details": {
+	"name": "Document",
+	"description": "Snowden documents"
+    },
+    "index_details": {
+	"mapping": "english",
+	"class_name": "SnowdenDoc"
+    },
+    "view_details": {
+	"show_tabs": ["text", "document", "link"],
+	"results_template": "default"
+    },
+    "sort_details": {
+	"sort_field": "released_date",
+	"sort_order": "desc"
+    },
+    "id_details": {
+	"id_field": "title",
+	"secondary_id": ["released_date"],
+	"trim_from_id": []
+    },
+    "version_tracking_details": {
+	"fields_to_track": [],
+	"most_recent_timestamp": "released_date",
+	"categories_to_merge_across_versions": []
+    },
+    "fields": {
+	"released_date": {
+	    "display_type": "Date",
+	    "icon": "",
+	    "human_readable": "Release Date"
+	},
+	"title": {
+	    "display_type": "Title",
+	    "icon": "",
+	    "human_readable": "Title"
+	},
+	"article_links": {
+	    "display_type": "Link",
+	    "icon": "",
+	    "human_readable": "Article Links"
+	},
+	"pdf_paths": {
+	    "display_type": "Attachment",
+	    "icon": "",
+	    "human_readable": "File Path",
+	    "prefix": "https://edwardsnowden.com/docs/doc/"
+	},
+	"document_date": {
+	    "display_type": "Date",
+	    "icon": "",
+	    "human_readable": "Document Date"
+	},
+	"doc_text": {
+	    "display_type": "Long Text",
+	    "icon": "",
+	    "human_readable": "Document"
+	}
+    }
+}

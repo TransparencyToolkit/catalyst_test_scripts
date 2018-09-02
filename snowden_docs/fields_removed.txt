@@ -1,0 +1,26 @@
+document_topic: Likely requires manual tagging to be accurate, but could
+approximate with a normalized term list. Or could include manual fields if the
+RSS feedd categories is added to the dataspec.
+
+sigads: Just a regex. Should be possible to duplicate.
+
+codewords: A fancy normalized term list. Won't be as accurate but should be
+able to mostly duplicate.
+
+agency: Manually tagged, but could automate by including the RSS feed
+categories or roughly approximate by extracting from text.
+
+countries_mentioned: A normal term list. Can be duplicated exactly.
+
+overall_classification: Can try to detect with a regex.
+
+overall_relto: This could be handled in two steps. First, extracting the
+classification header with a regex. Second, using a termlist to extract the
+3-letter country codes.
+
+description: Needs to be manually added.
+
+Then there are a number of new fields that could be added, such as extracted
+entities or keywords. Another way to duplicate the manual fields may be to
+first use entity extraction to get all organizations, and then run a term list
+on that field with a list of intelligence agencies.
